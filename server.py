@@ -28,8 +28,7 @@ pyalex.config.retry_http_codes = [429, 500, 503]
 # --- MCP Server Setup ---
 mcp = FastMCP(
     "OpenAlex Works Explorer",
-    version="0.1.0",
-    description="Provides tools to search and retrieve data about scholarly works from OpenAlex.",
+    instructions="Provides tools to search and retrieve data about scholarly works from OpenAlex.",
     dependencies=[
         'pyalex'
     ],
