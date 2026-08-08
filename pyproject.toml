@@ -5,7 +5,7 @@ description = "Provides tools to search and retrieve data about scholarly works 
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
-    "mcp[cli]>=1.6.0",
+    "mcp[cli]>=1.6.0,<2",
     "pyalex>=0.18",
 ]
 
