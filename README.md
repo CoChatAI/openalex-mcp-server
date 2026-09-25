@@ -84,6 +84,7 @@ This also means that the openalex search functionality does not search over the 
 
 ### Configuration
 
+*   **OpenAlex API key:** OpenAlex meters API use (keyless calls share a small daily allowance). Set `OPENALEX_API_KEY` to your key from openalex.org; it is sent as an `Authorization: Bearer` header.
 *   **OpenAlex Polite Pool:** To use the faster, more reliable OpenAlex polite pool, set the `OPENALEX_EMAIL` environment variable to your email address *before* running the server or when configuring it in your MCP client.
     ```bash
     export OPENALEX_EMAIL="your.email@example.com"

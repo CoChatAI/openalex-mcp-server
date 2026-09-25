@@ -19,6 +19,9 @@ logger = logging.getLogger(__name__)
 OPENALEX_EMAIL = os.getenv("OPENALEX_EMAIL")
 if OPENALEX_EMAIL:
     pyalex.config.email = OPENALEX_EMAIL
+# OpenAlex API key (usage-based pricing since 2026-02: keyless calls share a
+# small daily allowance). pyalex sends it as an Authorization: Bearer header.
+pyalex.config.api_key = os.getenv("OPENALEX_API_KEY") or None
 
 # Configure retries for robustness
 pyalex.config.max_retries = 3
